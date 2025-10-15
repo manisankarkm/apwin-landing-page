@@ -3,15 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ApWin247 | Mobile Landing Page</title>
+    <title>ApWin247 | Premium Landing Page</title>
 
     <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Font Awesome for Casino and Poker icons -->
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -26,108 +25,146 @@
       }
 
       body {
-        background: #0d0d0d;
-        color: #fff;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        text-align: center;
-        min-height: 100vh;
-        padding: 20px;
+        background: #0a0a0a;
+        color: #fff;
       }
 
+      /* Updated container with luxury gradient and glow */
       .container {
         width: 100%;
-        max-width: 400px;
-        background: linear-gradient(145deg, #111111, #1f1f1f);
-        border-radius: 20px;
-        padding: 30px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+        max-width: 420px;
+        background: linear-gradient(
+          145deg,
+          rgba(25, 25, 25, 0.95),
+          rgba(10, 10, 10, 0.85)
+        );
+        border-radius: 30px;
+        padding: 40px 30px;
+        text-align: center;
+        box-shadow: 0 0 25px rgba(0, 255, 234, 0.2),
+          0 0 50px rgba(255, 77, 109, 0.15);
+        backdrop-filter: blur(14px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        animation: fadeIn 1s ease forwards;
+        opacity: 0;
       }
 
-      h1 {
-        font-size: 2.2rem;
-        font-weight: 700;
-        margin-bottom: 12px;
-        color: #ff6700;
-      }
-
-      .highlight-text {
-        background-color: #ffcc00;
-        color: #1a1a1a;
-        padding: 6px 12px;
-        border-radius: 12px;
-        font-weight: bold;
-        display: inline-block;
-        margin-bottom: 12px;
-        letter-spacing: 1px;
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
       }
 
       h2 {
-        font-size: 1.9rem;
+        font-family: "Montserrat", sans-serif;
+        font-size: 2rem;
         font-weight: 700;
-        margin-bottom: 8px;
-        color: #ff9900;
+        color: #ff6700;
+        margin-bottom: 12px;
+      }
+
+      .highlight-text {
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin-bottom: 18px;
+        background: linear-gradient(90deg, #ffd700, #ff4500, #00ffff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      h1 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 3rem;
+        font-weight: 800;
+        margin-bottom: 12px;
+      }
+
+      .ap {
+        color: #00ffea;
+      }
+      .win {
+        color: #ff4d6d;
       }
 
       .bonus {
-        font-size: 1.3rem;
-        color: #00ff99;
-        margin: 12px 0;
-        font-weight: bold;
+        font-size: 1.4rem;
+        font-weight: 700;
+        background: linear-gradient(90deg, #ffcc00, #ff4d6d, #00ffea);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 14px 0;
       }
 
       .whatsapp-btn {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #25d366;
+        background: linear-gradient(90deg, #25d366, #00c851);
         color: #fff;
         font-weight: 700;
-        font-size: 1rem;
-        padding: 14px 15px;
-        border-radius: 12px;
-        margin: 15px 0;
+        font-size: 1.1rem;
+        padding: 16px 24px;
+        border-radius: 25px;
+        margin: 20px 0;
         text-decoration: none;
-        transition: 0.3s;
+        transition: all 0.3s ease;
+        box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
       }
 
       .whatsapp-btn:hover {
-        background-color: #1ebe57;
+        transform: scale(1.08);
+        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.9);
       }
 
       .whatsapp-btn img {
-        width: 25px;
-        height: 25px;
-        margin-right: 10px;
+        width: 28px;
+        height: 28px;
+        margin-right: 12px;
       }
 
       .info-box {
-        background: linear-gradient(to right, #ffd700, #ff8c00);
-        color: #1a1a1a;
-        padding: 12px;
-        border-radius: 10px;
-        margin: 10px 0;
-        font-weight: 600;
+        background: linear-gradient(135deg, #ffcc00, #ff4500);
+        color: #000;
+        padding: 14px;
+        border-radius: 20px;
+        margin: 14px 0;
+        font-weight: 700;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
       }
 
       .sports-icons {
         display: flex;
         justify-content: space-around;
-        margin-top: 20px;
+        margin-top: 28px;
+      }
+
+      .sports-icons div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.3s, filter 0.3s;
+      }
+
+      .sports-icons div:hover {
+        transform: scale(1.2);
+        filter: drop-shadow(0 0 12px #fff);
       }
 
       .sports-icons img,
       .sports-icons i {
-        width: 35px;
-        height: 35px;
+        width: 38px;
+        height: 38px;
+        margin-bottom: 6px;
       }
 
       .sports-icons span {
         font-size: 0.75rem;
-        display: block;
+        font-weight: 700;
         color: #fff;
-        margin-top: 3px;
       }
     </style>
   </head>
@@ -135,11 +172,10 @@
     <div class="container">
       <h2>ApWin247</h2>
       <div class="highlight-text">ASIA’S LARGEST BOOK</div>
-      <h1>APWIN247</h1>
+      <h1><span class="ap">AP</span><span class="win">WIN247</span></h1>
       <p>SINCE 2019</p>
       <p class="bonus">300% WELCOME BONUS</p>
 
-      <!-- WhatsApp Button -->
       <a
         class="whatsapp-btn"
         href="https://wa.me/917095047665?text=Hi!%20I%20am%20interested%20in%20joining%20ApWin247"
@@ -152,11 +188,9 @@
         GET YOUR ID NOW
       </a>
 
-      <!-- Info boxes -->
       <div class="info-box">24 HOUR REFILL</div>
       <div class="info-box">24 HOUR RETURN</div>
 
-      <!-- Sports icons -->
       <div class="sports-icons">
         <div>
           <img src="https://img.icons8.com/color/48/000000/cricket.png" />
